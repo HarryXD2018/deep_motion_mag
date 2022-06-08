@@ -506,10 +506,10 @@ class MagNet3Frames(object):
             del x_state
 
         # Try to combine it into a video
-        call([DEFAULT_VIDEO_CONVERTER, '-y', '-f', 'image2', '-r', '30', '-i',
-              os.path.join(out_dir, '%06d.png'), '-c:v', 'libx264',
-              os.path.join(out_dir, vid_name + '.mp4')]
-            )
+#         call([DEFAULT_VIDEO_CONVERTER, '-y', '-f', 'image2', '-r', '30', '-i',
+#               os.path.join(out_dir, '%06d.png'), '-c:v', 'libx264',
+#               os.path.join(out_dir, vid_name + '.mp4')]
+#             )
 
     # Training code.
     def _build_training_graph(self, train_config):
